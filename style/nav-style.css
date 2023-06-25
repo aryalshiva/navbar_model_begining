@@ -1,0 +1,127 @@
+/* main body of the navbar */
+.navbar{
+    display:flex;
+    background-color: brown;
+    padding-top:10px;
+    padding-bottom:10px;
+    justify-content: space-around;
+    flex:1;
+    padding-left: 20px;
+}
+/* only my name at nav bar */
+.nav-name{
+    display:flex;
+    background-color: rgb(241, 0, 80);
+    width:100%;
+    justify-content:center;
+    align-items: center;
+    font-size: xx-large;
+    color:rgb(0, 0, 250);
+    height:36px;
+    font-size: x-large;
+   }
+   /* images of the nav bar are manage here */
+.nav-link{
+    display:flex;
+    background-color: aqua;
+    width:100%;
+    justify-content:center;
+    align-items: center;
+    justify-content:space-around;
+    padding-right:30px ;
+    text-decoration: none;
+}
+/* to manage the size of the icons at nav-bar */
+.nav-link img{
+width :35px;
+}
+/* for a hover effect */
+.nav_menu_icons :hover{
+    border-radius:8px ;
+    background-color: rgba(29, 207, 231, 0.815);
+    box-shadow: 5px 5px 10px black ;
+    width:48px;
+    transition:border-radius 1.5s,background-color 1.5s,box-shadow 1.5s,width 0.5s;
+}
+/* hidden part that only display in lower size */
+.menu-icon{
+    width:200px;
+    background-color: aqua;
+    display:none;
+ 
+
+}
+.menu-icon img{
+    display: flex;
+    width:35px;
+    border-radius: 8px;
+}
+/* for the side view navbar */
+.side-view-navbar{
+    position:fixed;
+    background-color: chocolate;
+    display:flex;
+    flex-direction: column;
+    width:300px;
+    height:580px;
+    display: none;
+   
+}
+
+.side-view-profile{
+    background-color: blue;
+    height:150px;
+}
+.side-view-socialmedia{
+    background-color: burlywood;
+    height:60px;
+}
+.side-view-nav-items{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+     background-color: chartreuse;
+    height:500px;
+}
+.side-view-nav-items img{
+    width:35px;
+}
+.sidenav_menu_icons{
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    font-size:x-large;
+    
+    
+}
+/* this is for the side navbar text */
+.navtext{
+    padding-right: 100px;
+    
+}
+
+.sidenav_menu_icons:hover{   
+     border-radius:20px ;
+    background-color: rgba(29, 207, 231, 0.815);
+    box-shadow: 20px 20px 50px rgb(17, 0, 250) ;
+    transition:border-radius 1s,background-color 1s,box-shadow 1.5s;
+
+}
+/* for the different devices  */
+
+@media(max-width:600px){
+    .nav-link{
+        display:none;
+    }  
+    .menu-icon{
+        display:block;
+
+    }
+    .side-view-navbar{
+        display:block;
+    }
+}
+   
+    
